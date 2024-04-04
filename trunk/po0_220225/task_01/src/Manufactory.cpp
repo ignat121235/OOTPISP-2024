@@ -6,23 +6,23 @@ using namespace std;
 
 Manufactory::Manufactory()  // реализация конструктора без параметорв
 {
-	strcpy_s(name, "Неизвестно");
-	strcpy_s(headname, "Неизвестно");
+	strcpy(name, "Неизвестно");
+	strcpy(headname, "Неизвестно");
 	workers = 0;
 	cout << "Вызван конструктор по умолчанию \t объект - " << this << endl;
 }
 Manufactory::Manufactory(const char* NAME, const char* HEADNAME, const int WORKERS) // реализация конструктора с параметрами
 {
-	strcpy_s(this->name, NAME);
-	strcpy_s(this->headname, HEADNAME);
+	strcpy(this->name, NAME);
+	strcpy(this->headname, HEADNAME);
 	this->workers = WORKERS;
 	cout << "Вызов конструктора с параметрами\t объект - " << this << endl;
 
 }
 Manufactory::Manufactory(const Manufactory& other) // реализация конструктора копирования
 {
-	strcpy_s(this->name, other.name);
-	strcpy_s(this->headname, other.headname);
+	strcpy(this->name, other.name);
+	strcpy(this->headname, other.headname);
 	this->workers = other.workers;
 	cout << "Вызов конструктора копирования\t\t объект - " << this << endl;
 }
@@ -33,7 +33,7 @@ Manufactory::~Manufactory() //  реализация деструктора
 
 void Manufactory::setName(const char* name)
 {
-	strcpy_s(this->name, name);
+	strcpy(this->name, name);
 }
 
 char* Manufactory::getName()
@@ -43,7 +43,7 @@ char* Manufactory::getName()
 
 void Manufactory::setheadname(const char* headname)
 {
-	strcpy_s(this->headname, headname);
+	strcpy(this->headname, headname);
 }
 
 char* Manufactory::getheadname()
