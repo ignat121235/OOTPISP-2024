@@ -34,30 +34,30 @@ Manufactory::~Manufactory() //  реализация деструктора
 
 void Manufactory::setName(const char* Aname)
 {
-	strcpy(this->name, name);
+	strcpy(this->name, Aname);
 }
 
-char* Manufactory::getName()
+string Manufactory::getName() const
 {
-	return this->name;
+	return name;
 }
 
 void Manufactory::setheadname(const char* Aheadname)
 {
-	strcpy(this->headname, headname);
+	strcpy(this->headname, Aheadname);
 }
 
-char* Manufactory::getheadname()
+string Manufactory::getheadname() const
 {
-	return this->headname;
+	return headname;
 }
 
 void Manufactory::setworkers(const int Aworkers)
 {
-	this->workers = workers;
+	this->workers = Aworkers;
 }
 
-int Manufactory::getworkers()
+int Manufactory::getworkers() const
 {
 	return this->workers;
 }
@@ -65,11 +65,11 @@ int Manufactory::getworkers()
 void Manufactory::setFull(const char* Aname, const char* Aheadname, const int Aworkers)
 {
 	strcpy(this->name, Aname);
-	strcpy(this->headname, headname);
-	this->workers = workers;;
+	strcpy(this->headname, Aheadname);
+	this->workers = workers;
 }
 
-void Manufactory::printInfo()
+void Manufactory::printInfo() const
 {
 	cout << endl;
 	cout << "Работник цеха: " << this->name << endl;
