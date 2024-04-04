@@ -12,11 +12,11 @@ Manufactory::Manufactory()  // реализация конструктора б�
 	workers = 0;
 	cout << "Вызван конструктор по умолчанию \t объект - " << this << endl;
 }
-Manufactory::Manufactory(const char* NAME, const char* HEADNAME, const int WORKERS) // реализация конструктора с параметрами
+Manufactory::Manufactory(const char* ANAME, const char* AHEADNAME, const int AWORKERS) // реализация конструктора с параметрами
 {
-	strcpy(this->name, NAME);
-	strcpy(this->headname, HEADNAME);
-	this->workers = WORKERS;
+	strcpy(this->name, ANAME);
+	strcpy(this->headname, AHEADNAME);
+	this->workers = AWORKERS;
 	cout << "Вызов конструктора с параметрами\t объект - " << this << endl;
 
 }
@@ -32,7 +32,7 @@ Manufactory::~Manufactory() //  реализация деструктора
 	cout << "Вызов деструктора\t объект - " << this << endl;
 }
 
-void Manufactory::setName(const char* name)
+void Manufactory::setName(const char* Aname)
 {
 	strcpy(this->name, name);
 }
@@ -42,7 +42,7 @@ char* Manufactory::getName()
 	return this->name;
 }
 
-void Manufactory::setheadname(const char* headname)
+void Manufactory::setheadname(const char* Aheadname)
 {
 	strcpy(this->headname, headname);
 }
@@ -52,7 +52,7 @@ char* Manufactory::getheadname()
 	return this->headname;
 }
 
-void Manufactory::setworkers(const int workers)
+void Manufactory::setworkers(const int Aworkers)
 {
 	this->workers = workers;
 }
@@ -62,9 +62,9 @@ int Manufactory::getworkers()
 	return this->workers;
 }
 
-void Manufactory::setFull(const char* name, const char* headname, const int workers)
+void Manufactory::setFull(const char* Aname, const char* Aheadname, const int Aworkers)
 {
-	strcpy(this->name, name);
+	strcpy(this->name, Aname);
 	strcpy(this->headname, headname);
 	this->workers = workers;;
 }
