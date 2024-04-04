@@ -4,31 +4,31 @@
 
 using namespace std;
 
-Manufactory::Manufactory()  // реализация конструктора без параметорв
+Manufactory::Manufactory()  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 {
-	strcpy_s(name, "Неизвестно");
-	strcpy_s(headname, "Неизвестно");
+	strcpy_s(name, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+	strcpy_s(headname, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 	workers = 0;
-	cout << "Вызван конструктор по умолчанию \t объект - " << this << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ \t пїЅпїЅпїЅпїЅпїЅпїЅ - " << this << endl;
 }
-Manufactory::Manufactory(const char* NAME, const char* HEADNAME, const int WORKERS) // реализация конструктора с параметрами
+Manufactory::Manufactory(const char* NAME, const char* HEADNAME, const int WORKERS) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	strcpy_s(this->name, NAME);
 	strcpy_s(this->headname, HEADNAME);
 	this->workers = WORKERS;
-	cout << "Вызов конструктора с параметрами\t объект - " << this << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\t пїЅпїЅпїЅпїЅпїЅпїЅ - " << this << endl;
 
 }
-Manufactory::Manufactory(const Manufactory& other) // реализация конструктора копирования
+Manufactory::Manufactory(const Manufactory& other) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	strcpy_s(this->name, other.name);
 	strcpy_s(this->headname, other.headname);
 	this->workers = other.workers;
-	cout << "Вызов конструктора копирования\t\t объект - " << this << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\t\t пїЅпїЅпїЅпїЅпїЅпїЅ - " << this << endl;
 }
-Manufactory::~Manufactory() //  реализация деструктора 
+Manufactory::~Manufactory() //  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
 {
-	cout << "Вызов деструктора\t объект - " << this << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\t пїЅпїЅпїЅпїЅпїЅпїЅ - " << this << endl;
 }
 
 void Manufactory::setName(const char* name)
@@ -71,8 +71,8 @@ void Manufactory::setFull(const char* name, const char* headname, const int work
 void Manufactory::printInfo()
 {
 	cout << endl;
-	cout << "Работник цеха: " << this->name << endl;
-	cout << "Начальние цеха: " << this->headname << endl;
-	cout << "Количество рабочих: " << this->workers << endl;
+	cout << "Worker name: " << this->name << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ: " << this->headname << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << this->workers << endl;
 	cout << endl;
 }
