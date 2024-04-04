@@ -63,8 +63,8 @@ int Manufactory::getworkers()
 
 void Manufactory::setFull(const char* name, const char* headname, const int workers)
 {
-	strcpy_s(this->name, name);
-	strcpy_s(this->headname, headname);
+	strcpy(this->name, name);
+	strcpy(this->headname, headname);
 	this->workers = workers;;
 }
 
