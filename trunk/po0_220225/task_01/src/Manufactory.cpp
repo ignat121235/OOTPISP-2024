@@ -64,7 +64,7 @@ void Manufactory::setFull(const char* Aname, const char* Aheadname, const int Aw
 	this->workers = Aworkers;
 }
 
-void Manufactory::printInfo() const
+void Manufactory::printInfo()
 {
 	cout << endl;
 	cout << "Работник цеха: " << this->name << endl;
