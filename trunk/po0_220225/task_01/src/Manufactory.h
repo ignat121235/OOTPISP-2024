@@ -23,7 +23,7 @@ public:
 	void setheadname(const char* headname);
 	void setworkers(const int workers);
 	void setFull(const char* name,const char* headname,const int workers);
-	void printInfo() const;
+	void printInfo();
 
 };
 
