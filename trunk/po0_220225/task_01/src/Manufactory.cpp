@@ -61,7 +61,7 @@ void Manufactory::setFull(const char* Aname, const char* Aheadname, const int Aw
 {
 	strcpy(this->name, Aname);
 	strcpy(this->headname, Aheadname);
-	this->workers = workers;
+	this->workers = Aworkers;
 }
 
 void Manufactory::printInfo() const
