@@ -1,9 +1,4 @@
 #include "Manufactory.h"
-#include <string>
-#include <iostream>
-#include <cstring>
-
-using namespace std;
 
 Manufactory::Manufactory()  // реализация конструктора без параметорв
 {
