@@ -19,7 +19,7 @@ int main()
 	Manufactory* dinamicGrp;
 	dinamicGrp = new Manufactory[3];
 
-	dinamicGrp[0].setFull("Никита", "Сергейй", 10);
+	dinamicGrp[0].setFull("Никита", "Сергей", 10);
 
 	Manufactory temp(dinamicGrp[0]);
 
